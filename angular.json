@@ -66,7 +66,9 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "jun28:build"
+            "browserTarget": "jun28:build",
+            "port": 4208,
+            "host": "0.0.0.0"
           },
           "configurations": {
             "production": {
@@ -123,6 +125,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "jun28"
+    }
+  },
+  "defaultProject": "jun28",
+  "cli": {
+    "analytics": "f042786e-a7bf-47e0-8088-05347cba1dc0"
+  }
 }
