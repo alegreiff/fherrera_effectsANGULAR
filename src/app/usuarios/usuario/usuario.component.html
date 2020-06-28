@@ -1,1 +1,12 @@
-<p>usuario works!</p>
+<div class="row" *ngIf="usuario">
+  <div class="col-4">
+    <img [src]="usuario.avatar" alt="avatar" class="img-thumbnail">
+  </div>
+  <div class="col">
+    <ul class="list-group">
+      <li class="list-group-item"> <strong>Nombre:</strong>  {{ usuario.first_name }} </li>
+      <li class="list-group-item"> <strong>Apellido:</strong>  {{ usuario.last_name }} </li>
+      <li class="list-group-item"> <strong>Correo:</strong>  {{ usuario.email }} </li>
+    </ul>
+  </div>
+</div>
